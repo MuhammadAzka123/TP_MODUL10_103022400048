@@ -1,14 +1,9 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "TP_MODUL10_103022400048 | v1",
-    "version": "1.0.0"
+    "title": "TP_MODUL10_103022400048",
+    "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "http://localhost:5122"
-    }
-  ],
   "paths": {
     "/api/Film": {
       "get": {
@@ -68,8 +63,7 @@
                 "$ref": "#/components/schemas/Film"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -89,11 +83,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32"
             }
           }
@@ -131,11 +121,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int32"
             }
           }
@@ -193,21 +179,27 @@
         "type": "object",
         "properties": {
           "judul": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "sutradara": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "tahun": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "genre": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "rating": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "WeatherForecast": {
         "type": "object",
@@ -217,28 +209,20 @@
             "format": "date"
           },
           "temperatureC": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "temperatureF": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
           },
           "summary": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },

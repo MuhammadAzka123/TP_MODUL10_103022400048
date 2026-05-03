@@ -33,3 +33,6 @@ C:\Users\Muhammad Azka Z.L\Downloads\TP_MODUL10_103022400048\TP_MODUL10_10302240
 C:\Users\Muhammad Azka Z.L\Downloads\TP_MODUL10_103022400048\TP_MODUL10_103022400048\obj\Debug\net10.0\TP_MODUL10_103022400048.pdb
 C:\Users\Muhammad Azka Z.L\Downloads\TP_MODUL10_103022400048\TP_MODUL10_103022400048\obj\Debug\net10.0\TP_MODUL10_103022400048.genruntimeconfig.cache
 C:\Users\Muhammad Azka Z.L\Downloads\TP_MODUL10_103022400048\TP_MODUL10_103022400048\obj\Debug\net10.0\ref\TP_MODUL10_103022400048.dll
+C:\Users\Muhammad Azka Z.L\Downloads\TP_MODUL10_103022400048\TP_MODUL10_103022400048\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Muhammad Azka Z.L\Downloads\TP_MODUL10_103022400048\TP_MODUL10_103022400048\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Muhammad Azka Z.L\Downloads\TP_MODUL10_103022400048\TP_MODUL10_103022400048\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll

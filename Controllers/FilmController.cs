@@ -24,10 +24,10 @@ namespace TP_MODUL10_103022400048.Controllers
         [HttpGet("{id}")]
         public ActionResult<Film> GetFilm(int id)
         {
-            if (id < 0 || id >= films.Count)
+            if (id < 1 || id > films.Count)
                 return NotFound();
 
-            return films[id];
+            return Ok(films[id - 1]);
         }
 
         [HttpPost]
@@ -43,10 +43,10 @@ namespace TP_MODUL10_103022400048.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeleteFilm(int id)
         {
-            if (id < 0 || id >= films.Count)
+            if (id < 1 || id > films.Count)
                 return NotFound();
 
-            films.RemoveAt(id);
+            films.RemoveAt(id - 1);
             return Ok();
         }
     }
