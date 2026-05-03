@@ -7,5 +7,14 @@
         public string Tahun { get; set; }
         public string Genre { get; set; }
         public string Rating { get; set; }
+    
+    public Film(string judul, string sutradara, string tahun, string genre, string rating)
+        {
+            this.Judul = judul;
+            this.Sutradara = sutradara;
+            this.Tahun = tahun;
+            this.Genre = genre;
+            this.Rating = rating;
+        }
     }
 }
